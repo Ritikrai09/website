@@ -27,7 +27,7 @@ html{
 }
 
 .heading{
- background: linear-gradient( #ae8a8a1c, #000000a1), url(Image/paint.jpeg) center;
+ background: linear-gradient( #ae8a8a1c, #000000a1), url(image/paint.jpeg) center;
  padding: 20px 0px;
 width: 34%;
 height: 22%;
