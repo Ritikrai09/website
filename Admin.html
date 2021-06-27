@@ -17,6 +17,7 @@ body {
 font-family: sans-serif;
  margin: 0px;
  background: rgb(187 228 139);
+ overflow: hidden;
 }
 
 .wrapper{
@@ -73,9 +74,9 @@ span {
 #admin img{
     position: relative;
     float: right;
-    background: #ffd75ff2;
     width: 3.5rem;
     height: 3.5rem;
+     left: 85%;
     border-radius: 50%;
 }
 
@@ -90,7 +91,7 @@ label {
 
 header input[type='text'] {
    width: 30vw; 
-   height: 3vw; 
+  height: 5vh;
    font-size: 16px;
    border-radius: 20px;
    background: #fefefe;
@@ -103,17 +104,17 @@ header input[type='text'] {
  }
 
 header select {
-   width: 10vw; 
-   height: 2.5vw; 
-   font-size: 14px;
-   border-radius: 20px;
-   background: #fefefe;
-   border: none;
-   box-shadow: 0px 2px 2px inset grey;
-   padding: 10px 20px;
-   position: relative;     
-   top: 45%;
-   
+    width: 17vw;
+    height: 5vh;
+    font-size: 14px;
+    border-radius: 20px;
+    background: #fefefe;
+    border: none;
+    box-shadow: 0px 2px 2px inset grey;
+    padding: 10px 2px 10px 11px;
+    position: relative;
+    top: 45%;
+    left: 22%;
  }
 
 
@@ -127,20 +128,20 @@ header span img{
 
 
 header span h1{
-    font-size: 30px;
+     width: 20vw;
+    height: auto;
     letter-spacing: 2px;
-    margin: 1.2em 0.4em 1.5em 0px;
     color: ghostwhite;
-    float: right;
     text-shadow: 0px 1px 1px grey;
-    position: relative;     
-    top: -6%;
+    position: absolute;
+    top: 17%;
+    left: 15%;
   }
 
 
  header button {
      width: 7vw; 
-     height: 3vw; 
+    height: 5vh;
      background: #fefefe;
      border: none;
      position: relative;     
@@ -161,7 +162,7 @@ aside ul{
  list-style-type: none;
  height: fit-content;
  display: grid; 
- margin: 0 0 0 -1.3em;
+ margin: 0 0 0 -1.7em;
 }
 
 aside ul a li{
@@ -207,16 +208,134 @@ footer ul li{
   box-shadow: 0px 2px 10px 0px inset grey;
 }
 
-@media (max-width: 600px) {
-  .wrapper  {
-    grid-template-areas: 
-      'header header header header header header' 
-      'aside aside aside aside aside aside' 
-      'Main Main Main Main Main Main' 
-      'footer footer footer footer footer footer';
-  }
+#buttLog{
+    width: 18vw;
+    background: #8bc34a;
+    color: aliceblue;
+    border: 2px solid #d0d789;
 }
 
+@media(min-width:1170px) and (max-width:1300px){
+
+  body  {
+    
+    font-size: 14px;
+     
+   }
+
+h1 {
+  font-size: x-large;
+}
+
+}
+
+@media(min-width:100px) and (max-width:880px){
+
+ body  {
+    
+    font-size: 14px;
+    
+   }
+
+ aside ul a li {
+
+    padding-top: 1em;
+    height: 6vh;
+    width: auto;
+    margin-left: -1.3em;
+    font-size: 0.8em;
+   }
+
+header span #logo{
+   display: none;
+  }
+
+header input[type='text'] {
+    width: 30vw;
+    height: 5vh;
+    font-size: 13px;
+}
+
+header span img{
+   display: block;
+   width: 10vw;
+
+  }
+
+header button{
+    border-radius: 30px;
+     height: 5vh;
+    font-size: 13px;
+}
+header select{
+    font-size: 13px;
+    width: auto;
+}
+
+header #admin img{
+   
+      width: 7vh;
+    height: 7vh;
+  }
+
+ #category{
+   
+    display: none;
+  }
+
+
+}
+
+@media(min-width:600px) and (max-width:870px){
+
+h1 {
+    font-size: 14px;
+    margin-left: -1em;
+    margin-top:  4em;
+}
+
+header span #logo{
+   display: block;
+   width: 10vw;
+    margin-top: -7%;
+    margin-left: 20%;
+  }
+
+}
+
+@media(min-width:870px) and (max-width:1170px){
+
+h1 {
+    font-size: 18px;
+    margin-left: -2em;
+    margin-top:  3em;
+}
+
+header span #logo{
+   display: block;
+   width: 10vw;
+    margin-top: -7%;
+    margin-left: 20%;
+  }
+
+}
+
+@media(min-width:300px) and (max-width:600px){
+
+h1 {
+     font-size: 12px;
+    margin-left: -8%;
+    margin-top: 45%;
+}
+
+header span #logo{
+   display: block;
+   width: 10vw;
+    margin-top: -7%;
+    margin-left: 20%;
+  }
+
+}
 </style>
 
     <div class='wrapper'> 
@@ -225,15 +344,15 @@ footer ul li{
   
         <span>
   	      
-  	      <img src="logo3.svg">
+  	      <img id ='logo' src="logo3.svg">
   	
          	<h1>7 WONDERS</h1></span>
     
            <input type='text' placeholder="Type Here To Find">
 
-      <button>Search</button>
+      <button>B</button>
 
-      <label for='Category'>Category :</label>
+      <label for='Category' id='category'></label>
 
       <select>
       	
@@ -243,7 +362,7 @@ footer ul li{
 
       </select>
   
-    <span id='admin'> <img src="admin.svg"><h4>Admin</h4> </span>
+    <span id='admin'> <img src="admin.svg"></span>
 
   </header>
 
