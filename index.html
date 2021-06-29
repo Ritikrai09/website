@@ -1,7 +1,7 @@
 <html>
 
     <head>
-         <meta name='viewport' content="initial-scale=0.8">
+         <meta name='viewport' content="initial-scale=1">
     
         <title>HBZ - FOR YOU</title>
 
@@ -17,7 +17,7 @@
   width: 100%; 
   height: fit-content; 
   font-family: san-serif;
- background-image: linear-gradient(to top,rgb(255 152 0 / 20%),rgb(255 152 0 / 10%)),linear-gradient(to top,rgb(0 0 0 / 60%),rgb(0 0 0 / 70%)), url('image/food1.jpg');
+     background-image: linear-gradient(45deg,rgb(15 15 14 / 20%),rgb(255 152 0 / 10%)),linear-gradient(to top,rgb(0 0 0 / 60%),rgb(255 152 0 / 32%)), url(image/food1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -25,30 +25,27 @@
 
 
 fieldset,.div1{
-
-margin-left: 25%;
-margin-top: -1%;
 width: 50%;
 height: 80vh;
 border-radius: 20px;
 background: rgba(0, 0, 0, 0.3);
 background-repeat: no-repeat;
 background-size: contain;
+position: absolute;
 border: 5px groove rgb(236 220 220 / 50%);
 box-shadow: 2px 2px 50px 0px #191818ba inset;
-animation: pop 1000ms 0.8s linear 1;
-position: absolute;
+margin-left: 25%;
+margin-top: -1%;
 
 }
 
 
 .field1{
-
    width: 50%;
    height: 90vh;
-   animation: pop 1000ms 0.8s linear 1;
    position: absolute;
    overflow: hidden;
+    animation: pop 1000ms ease-out 1;
 }
 
 
@@ -70,9 +67,42 @@ fieldset img{
  position: relative;
  left: 0%;
 top: -15%;
-animation: fadeIn 1000ms .8s linear 1 forwards;
 opacity: 0;
+animation: fadeIn 1s .5s ease-out 1 forwards;
  }
+
+h3{
+font-size: 1.2em;
+margin-top: -10%;
+letter-spacing: .2rem;
+color: ghostwhite;
+position: relative;
+top: 3%;
+animation: fadeIn 1000ms 0.6s ease-out 1 forwards;
+opacity: 0;
+text-shadow: 2px 2px 10px black;
+}
+ #one{
+ animation: SlideIn1 1000ms 0.6s  ease-out 1 forwards;
+ }
+
+ #two{
+  animation: fadeIn 1000ms 0.6s ease-out 1 forwards;
+ }
+
+ #three{
+  animation: SlideIn2  1000ms 0.6s  ease-out 1 forwards;  
+ }
+
+h1{
+  
+font-size: 5.5vw;
+color: ghostwhite;
+display: inline-flex;
+position: relative;
+text-shadow: 2px 2px 10px black;
+opacity: 0;
+}
 
 .field2 #mainlogo{
     width: 35%;
@@ -80,22 +110,24 @@ opacity: 0;
     position: relative;
     left: 15%;
     z-index: 3;
-    transform: scale(0.6) translate(14vh,-7vh);
+    transform: scale(0.6) translate(14vh,-8vh);
  }
 
 .field2 h1{
-    transform: scale(0.4) translate(-38vh,-19vh);
+    transform: scale(0.4) translate(-38vh,-20vh);
     letter-spacing: 14px;
 
  }
 
 .admin1 span img{
     
+    
     width: 51%;
-    height: 10vh;
+    height: 13.5vh;
     position: relative;
-   left: 18%;
-    top: 10%;
+    left: 18%;
+    top: 6%;
+
 }
 
  #paging2{
@@ -161,29 +193,45 @@ label span{
     color: #5a5555;
     width: 100%;
     letter-spacing: 0.4px;
-    padding: 1em 1.5em;
+    padding: 1.3em 1.5em;
     position: absolute;
     left: 0%;
+    line-height: 1.2;
     z-index: 2;
     text-shadow: 0px 1px 0px black;
 }
 
 .inputfont{
-    width: 25%;
-    font-size: small;
-    padding: 4px 7px;
+     width: 36%;
+    font-size: smaller;
+    display: inline-flex;
+    padding: 10px 15px;
     text-align: center;
     background: ghostwhite;
-    transform: translate(0.8vh, -2.2vh);
-    transition: transform 100ms ease-in;
+    transform: translate(0.8vh, -2.7vh);
+    line-height: 0.6;
+    transition: transform 200ms ease-in-out;
 }
 
+.spanImg{
+    width: 3vw;
+    height: 3.5vh;
+    border-radius: 0;
+    border-right-style: groove;
+    margin: -8% 4% -1% -8%;
+}
+    
+.inputImg{
+   width: 2vw;
+    height: 2.5vh;
+    margin: -8% 6% 1% -17%;
+}
 
 input{
   font-family: -webkit-pictograph;
     font-weight: bold;
     color: #464141;
-    width: 90%;
+    width: 100%;
     font-size: 16px;
     padding: 10px;
     letter-spacing: 1px;
@@ -228,20 +276,11 @@ input:focus{
     top: 23%;
     padding: 3em 9em 7em 15em;
     grid-template-columns: 20em;
-    grid-template-rows: 4vh 6vh 6vh 11vh 21vh;
+    grid-template-rows: 3.5vh 3.5vh 3.5vh 3.5vh 0vh;
     row-gap: 3.3em;
     background: rgb(255 180 70 / 84%);
 }
 
-.subpage2  .forgot {
-    padding: 10px;
-    position: absolute;
-    left: 36%;
-    top: 80%;
-   color: #2b387e;
-    margin: -2% -1%;
-    text-shadow: 0px 1px 1px #5d5151;
-}
 
 .subpage4 span a{
    
@@ -287,28 +326,6 @@ height: 100vh;
 
   }
 
-h1{
- 	
-font-size: 5.5vw;
-color: ghostwhite;
-animation: fadeIn 1000ms .3s linear 1 forwards;
-display: inline-flex;
-position: relative;
-opacity: 0;
-text-shadow: 2px 2px 10px black;
-}
-
-h3{
-font-size: 1.2em;
-margin-top: -10%;
-letter-spacing: .2rem;
-color: ghostwhite;
-position: relative;
-top: 3%;
-animation: fadeIn 1000ms 0.8s linear 1 forwards;
-opacity: 0;
-text-shadow: 2px 2px 10px black;
-}
 
 section{
  position: absolute;
@@ -350,20 +367,16 @@ animation: fadeInUp 1000ms 1s ease-in 1 backwards;
      left: 40%;
   }
 
- .subpage2 #Account { 
-     margin: 24% 18%;
-    width: 57vh;
-}
-
-.subpage2 #Account a::before {
-    content: 'Already Have an Account?';
+.subpage2 #Account{
+    margin-left: -57%;
+    padding: 0.1em .1em .1em .4em;
+    width: 52vh;
     position: absolute;
-    top: 76%;
-    color: #2c2a2a;
-    font: caption;
+    top: 100%;
     font-weight: 700;
-    left: 26%;
-}
+  }
+
+
 
 section button:hover{
 background-color: #ff6500;
@@ -375,11 +388,33 @@ box-shadow: 0 -2px 10px #e2ec7f inset;
  }
 
 .subpage2 .forgot a{
-   color: #5495b5;
+    color: #fae4f3;
+    font-weight: 700;
+    font-size: smaller;
+    font-family: sans-serif;
+    letter-spacing: .15em;
     text-shadow: 0 0 black;
+    text-decoration: none;
+}
+
+.subpage2  .forgot {
+     padding: 1em;
+    position: relative;
+    left: 48%;
+    top: -160%;
+    color: #2b387e;
+    /* margin: -2% -1%; */
+    text-shadow: 0px 1px 1px #5d5151;
 }
 
 
+.subpage2 .forgot1 {
+    margin-top: 3%;
+    position: relative;
+    left: 20%;
+    top: -49%;
+    padding: 1em;
+}
  #result{
 
     position: absolute;
@@ -389,8 +424,9 @@ box-shadow: 0 -2px 10px #e2ec7f inset;
   }
 
 #buttLogo{
-    width: 18vw;
-    height: auto;
+    width: 21vw;
+    height: 3vw;
+    margin-top: -4em;
     border: 2px solid #84f184;
     background: #48d548;
     color: #ffffff;
@@ -419,18 +455,6 @@ font-weight: 700;
     color: rgb(204 3 3 / 65%);
     text-shadow: 0 0 #534c4c;background-color: #e57f7feb;
 }
-
-#one{
- animation: SlideIn1 1000ms 1s ease-in 1 forwards;
- }
-
- #two{
-  animation: fadeIn 1000ms 1s ease-in 1 forwards;
- }
-
- #three{
-  animation: SlideIn2 1000ms 1s ease-in 1 forwards;  
- }
 
 
 @keyframes fadeIn{
@@ -489,7 +513,7 @@ font-weight: 700;
   @keyframes pop{
     
     0%{
-    transform: scale(0.8) translateY(-.4em);
+    transform: scale(1.05) translateY(-.4em);
 	opacity: 0.2;
 
 	}
@@ -515,19 +539,13 @@ font-weight: 700;
 
 @media(min-width:300px) and (max-width:780px){
 
-html{ 
-
-  overflow: hidden;
-
-}
-	
 fieldset{
 
     width: 71%;
     height: 46vh;
     position: absolute;
     left: -14%;
-    transform: scale(1.2,1.3);
+	  transform: scale(1.2,1.3);
 	
   }
  
@@ -541,7 +559,7 @@ fieldset{
 
     width: 71%;
     height: 60vh;
-    top:-3vh;
+    top:auto;
     transform: scale(1.2,1.3);
   }
  
@@ -622,7 +640,7 @@ top: 18%;
 .field1{
     width: 108vw;
     height: 60vh;
-    top: -3vh;
+    top: -2%;
     left: -28%;
   
   }
@@ -650,9 +668,9 @@ padding-left: 14em;
 
 .inputfont{ 
  
-width: 32%;
+width: 36%;
 transform: translate(1.8vh, -2.2vh);
-  }
+}
 
  #subpage3 label input {
     width: 100%;
@@ -668,7 +686,7 @@ label {
     position: relative;
     width: 100vh;
     left: -11%;
-    top: -20%;
+    top: 4%;
     transform: scale(1.1);
 }
 
@@ -678,29 +696,19 @@ label {
 }
 
 .field2 #one {
-    transform: scale(0.5) translate(-42vh,-16vh);
-    font-size: 3.5em;
+   transform: scale(0.5) translate(-63vw,-9vh);
+    font-size: 3em;
     width: 100%;
     position: absolute;
     top: 50%;
 }
 
-.subpage2  #Account{
+.subpage2 #Account {
     position: absolute;
-    top: 46%;
-    margin: 17%;
-  }
-
-.subpage2 #Account a::before {
-    content: 'Already Have an Account?';
-    position: absolute;
-    top: 0;
-    color: #2c2a2a;
-    font: caption;
-    font-weight: 700;
-    left: -53%;
+    top: 51%;
+    left: 46%;
+    font-size: smaller;
 }
-
 #subpage3 { 
     width: 83%;
 }
@@ -712,8 +720,16 @@ label {
 
 }
 
+.subpage2 .forgot {
+    padding: 1em;
+    position: relative;
+    left: -45%;
+    top: -144%;
+}
+
 #buttLogo {
     width: 32vw;
+    height: 6vh;
     position: relative;
     left: -35%;
 
@@ -724,10 +740,6 @@ label {
   margin-left: -25%;
 }
 
-.subpage2 .forgot {
-    margin: -2% -16%;
-    letter-spacing: 0.5px;
-}
 
 #result {
     width: 98vw;
@@ -735,6 +747,18 @@ label {
     text-align: center;
     font: icon;
     font-size: small;
+}
+
+.loglabel span img{
+    width: 11vw;
+    margin-right: 5%;
+}
+
+.spanImg{
+    margin-right: 5%;
+    margin-left: -5%;
+    border: none;
+    width: auto;
 }
 }
 
@@ -782,12 +806,21 @@ legend{
 .subpage2 section button {
     min-width: 20.8vh;
     left: -17vh;
+    top: 25%;
 }
 
- .subpage2 #Account { 
-   margin: 24% 13%;
-  
+.subpage2 #Account {
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    font-size: 1em;
 }
+
+.subpage2 .forgot {
+    
+    left: -5%;
+}
+
 label {
     position: relative;
     left: -30%;
@@ -805,10 +838,15 @@ label {
 
 #subpage3 #buttlogo { 
     width: 30vh;
+    height: 6vh;
     margin-left: -18%;
   
 }
 
+.spanImg{ 
+  width: 5vw;
+margin-left: -6%;
+}
 
 
 }
@@ -848,6 +886,7 @@ label {
 
 #buttLogo {
     width: 32vw;
+    height: 6vh;
     position: relative;
     left: -13%;
 }
@@ -864,9 +903,8 @@ label {
 
 .subpage2  #Account{
 
-    margin: 17% 26%;
+       margin: 2% -48%;
   }
-
 
 
   .field2 #one {
@@ -881,6 +919,11 @@ label {
 .loglabel {
     width: 50vw;
     left: -36%;
+}
+
+.subpage2 .forgot {
+    
+    left: -5%;
 }
  
 .subpage2 section {
@@ -903,6 +946,21 @@ label {
     font-size: small;
 }
 
+.spanImg{
+    width: 7vw;
+
+}
+
+.inputfont{ 
+ 
+width: 37%;
+padding: 10px 15px;
+transform: translate(1.8vh, -2.5vh);
+}
+
+
+
+
 }
 
 
@@ -915,7 +973,7 @@ label {
   
   <fieldset class='field1'>
  
-     <img id='firstlogo' src='logo3.svg'> 
+     <img id='firstlogo' src='image/logo3.svg'> 
 
      <legend> 
 
@@ -938,40 +996,60 @@ label {
 <form id='Signpage1' class='page pg1' action=""> 
 
    <div class="subpage2 sub" id='sign'> 
-
-                   <label for="restaurant">    
-                   <input type='text' id="pass1" name='restaurant' required>
-                   <span>Restaurant</span>
+                    
+                    <label for="user">   
+                   <input type='text' id="Ids" name='Email Id' 
+                    onblur='BlurEle(this);' 
+                    onchange="Removelabel(this);" required>
+                   
+                   <span><img class='spanImg' src="image/admin.svg">Name</span>
+                   
                    </label>
                 
                     <label for="Email ID" id='txt1'>
-                    <input type="text" id="EId" name='email' required placeholder="">
-                    <span id='mail'>Email Id</span>       
+                    <input type="text" id="EId" name='email' 
+                    onblur='BlurEle(this);' 
+                    onchange="Removelabel(this);" required placeholder="">
+                    
+                    <span id='mail'><img class='spanImg' src="image/mail.svg">Email</span>       
+                    
                     </label>
 
                     <label for="Password">
-                    <input type="password" id="password"  name='password' required placeholder="">
-                    <span>Password</span> 
+                    
+                    <input type="password" id="pass1" name='password' 
+                    onblur='BlurEle(this);'
+                    onchange="Removelabel(this);"  required placeholder="">
+                    
+                    <span><img class='spanImg' src="image/Password.svg">Password</span> 
+
                     </label> 
                     
                     <label for="Number">
-                    <input type="text" id="IdNum" name='number' title="Enter 10 digits" pattern="[0-9]{10}" maxlength='10' required placeholder="">
-                    <span>Mob No.</span> 
+                    
+                    <input type="text" id="IdNum" name='number' title="Enter 10 digits" pattern="[0-9]{10}" maxlength='10' 
+                    onblur='BlurEle(this);' 
+                    onchange="Removelabel(this);" required placeholder="">
+                    
+                    <span><img class='spanImg' src="image/Mobile.svg">Mob.</span> 
+                    
                     </label>
-             
+                    
+                    <label for="restaurant">    
+                   <input type='text' id="rest1" onblur='BlurEle(this);'  onchange="Removelabel(this);"  name='restaurant' required>
+                   <span><img class='spanImg' src="image/Res.svg">Restaurant</span>
+                   </label>
              <section>
              
              <button>Submit</button>
              <button>Reset</button>
+             <span id='Account'>
+                      Already Have an Account? <a style='cursor:pointer; color:blue;'> Click Here </a>
+                 </span>
           
+
            </section>   
 
-             <span id='Account'>
-                <a id='Account' style='cursor:pointer; color:blue;'>
-                        Click Here
-                 </a>
-           </span>
-            
            </div>
 
     </form>
@@ -984,9 +1062,9 @@ label {
        
          <div class='admin1'>
            
-               <span> <img src='admin.svg'></span>
+               <span><img src='image/admin.svg'></span>
 
-              <img id= mainlogo src='logo3.svg'> 
+              <img id= mainlogo src='image/logo3.svg'> 
               <H1 id='one'>7 WONDERS</H1> 
           </div>
 
@@ -997,22 +1075,23 @@ label {
                   <div class="subpage2" id="subpage3"> 
 
                    <label class="loglabel" for="user">   
-                   <input type='text' id="Id" name='Email Id' required>
-                   <span>Email ID</span>
+                   <input type='text' id="IdE" name='Email Id' onblur='BlurEle(this);' onchange="Removelabel(this);"  required>
+                   <span><img class='spanImg' src="image/mail.svg">Email</span>
                    </label>
                 
                 <label class="loglabel" for="Password">
-                <input type="password" id="pass" name='password' required placeholder="">
-                <span>Password</span> 
+                <input type="password" id="pass2" name='password' 
+                onblur='BlurEle(this);'  onchange="Removelabel(this);"  required placeholder="">
+
+                <span><img class='spanImg' src="image/Password.svg" style=" ">Password</span> 
                 </label> 
+                <span class='forgot'><a href="">Forgot password?</a></span>
               
                <button class="loglabel" id='buttLogo' onclick="verifyUser();"> Log In</button>
                
                <span id='result'></span>
 
-               <span class='forgot'><a  href="">Forgot Password</a></span>
-
-               <span class='forgot' style='margin-top: 3%'>New User?<a id='linkSign' onclick='signup();' href=''>Register Here</a></span>
+               <span class='forgot forgot1' style='margin-top: -3%'>New User? <a id='linkSign' onclick='signup();' href=''>Sign up</a></span>
 
            </div>  
 
@@ -1081,13 +1160,13 @@ function animatebox(){
   field1.animate(boxframes, {
       duration: 300,
       fill: 'forwards',
-      easing: 'cubic-bezier(.1,.7,1,.1)'
+      easing: 'ease-out'
   })
 
   field2.animate(boxframes1, {
       duration: 300,
       fill: 'forwards',
-      easing: 'cubic-bezier(.1,.7,1,.1)'
+      easing: 'ease-out'
   })
 
 document.querySelector('.field2').style.display='block';
@@ -1190,19 +1269,19 @@ function animatebox(){
   pg.animate(boxframes1, {
       duration: 300,
       fill: 'forwards',
-      easing: 'cubic-bezier(.1,.7,1,.1)'
+      easing: 'ease-out'
   })
 
   sub.animate(boxframes, {
-      duration: 300,
+      duration: 400,
       fill: 'forwards',
-      easing: 'linear'
+      easing: 'ease-out'
   })
 
   field1.animate(boxframes3, {
       duration: 500,
       fill: 'forwards',
-      easing: 'cubic-bezier(.1,.7,1,.1)'
+      easing: 'ease-out'
   })
 
 
@@ -1213,8 +1292,8 @@ animatebox();
   buttons.style.display='none';
   logo.style.display='none'; 
   legend.style.top='-8%';
-  legend.style.transition='top 300ms cubic-bezier(.1,.7,1,.1)';
-  document.querySelector('.field1 legend').innerHTML ='<h1>Registration Form</h1>';
+  legend.style.transition='top 300ms ease-in-out';
+  document.querySelector('.field1 legend').innerHTML ='<h1 style="opacity:1; height:20vw;">Registration Form</h1>';
 }
 
  var elemInput = document.getElementsByTagName("label").length;
@@ -1225,23 +1304,34 @@ animatebox();
 
 for(var i=0;  i < elemInput; i++) {
   
-  let elem = elemInput1[i];
+   let elem = elemInput1[i];
+
    let elem1 = elemInput2[i];
+
+   
+    function BlurEle(elem){
+
+      elem.nextElementSibling.classList.remove('inputfont');
+      elem.nextElementSibling.children[0].classList.remove('inputImg');
+}
+
+function Removelabel(elem1){
+
+          
+     elem1.removeAttribute('onblur','');
+  
+   }
+
+
 
 elem.addEventListener('click',function(e){
       
       elem.children[1].classList.add('inputfont');
+       elem.children[1].children[0].classList.add('inputImg');
       elem1.focus();
+   
 
-});
-
-elem1.addEventListener('click',function(e){
-      
-      if (elem.children[1].className == 'inputfont') {
-      elem.children[1].classList.remove('inputfont');
-      elem1.blur();
-   }
-});
+ });
 
 }
 
