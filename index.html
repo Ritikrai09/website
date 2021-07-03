@@ -28,7 +28,7 @@
 fieldset,.div1{
 width: 50%;
 height: 80vh;
-border-radius: 20px;
+border-radius: 32px;
 background: rgba(0, 0, 0, 0.3);
 background-repeat: no-repeat;
 background-size: contain;
@@ -42,13 +42,14 @@ margin-top: -1%;
 
 
 .field1{
-   width: 50%;
-   height: 90vh;
-   position: absolute;
-    left: 0;
-    top: -5%;
+    width: 49%;
+    height: 105vh;
+    position: absolute;
+    left: 1%;
+   top: -5%;
    overflow: hidden;
    animation: pop 1000ms ease-out 1;
+   font-family: sans-serif;
 }
 
 
@@ -85,6 +86,7 @@ animation: fadeIn 1000ms 0.6s ease-out 1 forwards;
 opacity: 0;
 text-shadow: 2px 2px 10px black;
 }
+
  #one{
  animation: SlideIn1 1000ms 0.6s  ease-out 1 forwards;
  }
@@ -105,6 +107,12 @@ display: inline-flex;
 position: relative;
 text-shadow: 2px 2px 10px black;
 opacity: 0;
+
+}
+
+
+.field1 #register{
+    margin-top: 6%;
 }
 
 .field2 #mainlogo{
@@ -119,7 +127,7 @@ opacity: 0;
 .field2 h1{
     transform: scale(0.4) translate(-29vh,-20vh);
     letter-spacing: 14px;
-
+    font-family: sans-serif;
  }
 
 .admin1 span img{
@@ -206,7 +214,7 @@ label span{
     position: absolute;
     left: 0%;
     z-index: 2;
-    text-shadow: 0px 1px 0px black;
+    font-weight: bold;
 }
 
 .inputfont{
@@ -243,13 +251,13 @@ input{
     font-size: 16px;
     padding: 10px;
     letter-spacing: 1px;
-    border: 3px solid #5b5656;
+    box-shadow: -1px -1px 5px 1px #948a8a inset,1px 1px 1px 1px #625a5a;
+    border: 3px solid #f8c98394;
 }
 
 input:focus{
      outline: none;
 }
-
 
  select {
     width: 17vw;
@@ -278,7 +286,7 @@ input:focus{
 .subpage2{
     display: grid;
     grid-area: auto;
-    width: 54vw;
+    width: 48.7vw;
     height: 63vh;
     position: absolute;
     top: 23%;
@@ -286,7 +294,7 @@ input:focus{
     grid-template-columns: 20em;
     grid-template-rows: 4vh 4vh 4vh 4vh 0vh;   
     row-gap: 4em;
-    background: rgb(255 180 70 / 84%);
+    background: #e3701d;
 }
 
 
@@ -342,15 +350,13 @@ border: none;
 font-weight: bold;
 font-size: 16px;
 margin: 24px 9px 24px 0px;
-box-shadow: 0px 2px 0px #fefefe inset;
+box-shadow: 0px -2px 2px #191a18d4  inset;
 transition: background-color 300ms linear all, transform 1s linear all;
 animation: fadeInUp 1000ms 1s ease-in 1 backwards;
 }
 
 .subpage2 section button{
-    background: repeating-linear-gradient( 180deg, #4caf50 10% , #64bc00 100px);
-    border: 3px ridge #4dc74d;
-    color: #d0eca8;
+   background: #5ea35e;
     text-shadow: 0 0 0px #fef5f5;
     font: caption;
     position: relative;
@@ -362,32 +368,38 @@ animation: fadeInUp 1000ms 1s ease-in 1 backwards;
 
   .subpage2 section { 
      width: 52vw;
-     left: 40%;
+     left: 45%;
     margin-top: 7%;
   }
 
 .subpage2 #Account{
-    margin-left: -57%;
+    margin-left: -60%;
     padding: 0.1em .1em .1em .4em;
     width: 52vh;
     position: absolute;
     top: 100%;
     font-weight: 700;
+    color: #3a2e2e;
   }
 
 .field1 #headbutt button:hover{
 
-   background-color: coral;
+   background-color: #ea8200;
 
  }
 
 
 button:hover{
 
-   box-shadow: 0px -2px 15px #454733 inset;
+   box-shadow:0px -2px 10px 0px #191a18d4 inset;
 
  }
 
+#buttlogo:hover{
+
+   box-shadow:0px 1px 10px 0px #191a18d4 inset;
+
+ }
 .subpage2 .forgot a{
     color: #fae4f3;
     font-weight: 700;
@@ -403,9 +415,9 @@ button:hover{
     position: relative;
     left: 48%;
     top: -160%;
-    color: #2b387e;
-    /* margin: -2% -1%; */
-    text-shadow: 0px 1px 1px #5d5151;
+    color: #572525bf;
+    font-weight: bold;
+    font-family: sans-serif;
 }
 
 
@@ -429,9 +441,10 @@ button:hover{
     height: 3vw;
     margin-top: -4em;
     margin-left: -.5em;
-    border: 2px solid #84f184;
-    background: #48d548;
+    border: 2px solid #b2b9b2;
+    background: #5ea35e;
     color: #ffffff;
+    box-shadow:0px -2px 2px 0px #191a18d4 inset;
 }
 
  #result1{
@@ -565,6 +578,10 @@ fieldset{
     transform: scale(1.2,1.3);
   }
  
+ .field1 #register{
+    margin-top: -1%;
+}
+
  label {
     position: relative;
     left: -30%;
@@ -588,22 +605,38 @@ legend{
 	
   }
 
+
 h3{
     position: relative;
     top: 25%;
-    font-size: 0.8em;
-    margin: -2em;
+    font-size: 0.7em;
+    margin: -3em;
 	}
 
 h1{
 
-font-size: 2.2em;
+font-size: 2.5em;
 
 }
 
-fieldset img{
+
+ #register{
+
+font-size: 2em;
+margin-top: 0%;
+
+}
+
+fieldset  img{
+
+top: 10%;
+
+}
+
+fieldset  #firstlogo{
 
 top: -10%;
+transform: scale(0.6);
 
 }
 
@@ -641,7 +674,7 @@ top: 18%;
 
 .field1{
     width: 108vw;
-    height: 60vh;
+    height: 103vh;
     top: -5%;
     left: -28%;
   
@@ -683,15 +716,15 @@ transform: translate(1.8vh, -2.8vh);}
 label {
     width: 80vw;
     position: relative;
-    left: -52%;
+    left: -56%;
     margin-top: -8%;
   }
 
 .subpage2 section {
     position: relative;
     width: 100vh;
-   left: -34%;
-    top: 35%;
+    left: -38%;
+    top: -11%;
     transform: scale(1.1);
 }
 
@@ -713,7 +746,7 @@ label {
 .subpage2 #Account {
     position: absolute;
     margin-top: 0;
-    left: 52%;
+    left: 50%;
     font-size: smaller;
 }
 
@@ -732,8 +765,9 @@ label {
 .subpage2 .forgot {
     padding: 1em;
     position: relative;
-    left: -40%;
-    margin-top: -9%;
+    left: -30%;
+    margin-top: -7%;
+    font: small-caption;
 }
 
 .subpage2 .forgot1 {
@@ -781,10 +815,25 @@ label {
 
 @media(min-width:768px) and (max-width:1023px){
 
+.field1 {
+   
+    height: 106vh;
+
+}
 h1{
 
-  font-size: 3em;
+  font-size: 3.5em;
   
+}
+
+.field1 #register {
+   font-size: 3em;
+    margin-top: 1%;
+}
+
+
+h3{
+font-size: 0.91em;
 }
 
 #headbutt button{
@@ -856,8 +905,9 @@ legend{
 }
 
 .subpage2 .forgot {
-    
-     left: 4%;
+    font: small-caption;
+    margin-top: 3%;
+     left: 14%;
 }
 
 .subpage2 .forgot1 {
@@ -1029,9 +1079,32 @@ width: auto;
 padding: 3em 9em 7em 19em;
 }
 
+.field1 {
+   
+    height: 110vh;
+
+}
+
 .field2 {
     min-width: 116.8vh;
     margin-left: 18vw;
+}
+
+h1{
+
+  font-size: 3.5em;
+  
+}
+
+.field1 #register {
+   font-size: 3em;
+    margin-top: -1%;
+}
+
+h3{
+
+font-size: 0.91em;
+
 }
 
 legend{
@@ -1182,7 +1255,9 @@ legend{
              <button>Submit</button>
              <button>Reset</button>
              <span id='Account'>
-                      Already Have an Account? <a style='cursor:pointer; color:blue;'> Click Here </a>
+                      Already Have an Account? <a style='cursor:pointer;color: #cad8ba;
+    text-decoration: underline;
+    text-decoration-color: #cad8ba;'> Click Here </a>
                  </span>
           
 
@@ -1384,7 +1459,6 @@ var boxframes = [
 ]
 var boxframes3 = [
     {
-        height: '110vh',
         transform: 'scale(0.9)'
     
     }
@@ -1424,7 +1498,7 @@ animatebox();
   logo.style.display='none'; 
   legend.style.top='-3%';
   legend.style.transition='top 300ms ease-out';
-  document.querySelector('.field1 legend').innerHTML ='<h1 style="opacity:1; height:20vw;">Registration Form</h1>';
+  document.querySelector('.field1 legend').innerHTML ='<h1 style="opacity:1; height:20vw;" id="register">Registration Form</h1>';
 }
 
  var elemInput = document.getElementsByTagName("label").length;
