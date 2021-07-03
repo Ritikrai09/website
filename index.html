@@ -14,8 +14,9 @@
 
  html{
  	
-  width: 100%; 
-  height: fit-content; 
+  
+    width: 116%;
+    height: 117%;
   font-family: san-serif;
      background-image: linear-gradient(45deg,rgb(15 15 14 / 20%),rgb(255 152 0 / 10%)),linear-gradient(to top,rgb(0 0 0 / 60%),rgb(255 152 0 / 32%)), url(image/food1.jpg);
   background-size: cover;
@@ -44,8 +45,10 @@ margin-top: -1%;
    width: 50%;
    height: 90vh;
    position: absolute;
+    left: 0;
+    top: -5%;
    overflow: hidden;
-    animation: pop 1000ms ease-out 1;
+   animation: pop 1000ms ease-out 1;
 }
 
 
@@ -96,7 +99,7 @@ text-shadow: 2px 2px 10px black;
 
 h1{
   
-font-size: 5.5vw;
+font-size: 4.5vw;
 color: ghostwhite;
 display: inline-flex;
 position: relative;
@@ -114,7 +117,7 @@ opacity: 0;
  }
 
 .field2 h1{
-    transform: scale(0.4) translate(-38vh,-20vh);
+    transform: scale(0.4) translate(-29vh,-20vh);
     letter-spacing: 14px;
 
  }
@@ -164,6 +167,10 @@ span {
 
 }
 
+.logolabel {
+    width: 50vh;
+   margin: 0;
+}
 
 legend{
 height: 15%;
@@ -183,7 +190,9 @@ top: 30%;
 }
 
 label{
-   position: relative;
+    width: 23vw;
+    position: relative;
+    left: -6%;
 }
 
 
@@ -193,10 +202,9 @@ label span{
     color: #5a5555;
     width: 100%;
     letter-spacing: 0.4px;
-    padding: 1.3em 1.5em;
+    padding: 1em 1.5em;
     position: absolute;
     left: 0%;
-    line-height: 1.2;
     z-index: 2;
     text-shadow: 0px 1px 0px black;
 }
@@ -208,8 +216,8 @@ label span{
     padding: 10px 15px;
     text-align: center;
     background: ghostwhite;
-    transform: translate(0.8vh, -2.9vh);
-    line-height: 0.6;
+    transform: translate(0.8vh, -2.7vh);
+    line-height: 0.5;
     transition: transform 200ms ease-in-out;
 }
 
@@ -276,26 +284,16 @@ input:focus{
     top: 23%;
     padding: 3em 9em 7em 15em;
     grid-template-columns: 20em;
-    grid-template-rows: 3.5vh 3.5vh 3.5vh 3.5vh 0vh;
-    row-gap: 3.3em;
+    grid-template-rows: 4vh 4vh 4vh 4vh 0vh;   
+    row-gap: 4em;
     background: rgb(255 180 70 / 84%);
 }
 
-
-.subpage4 span a{
-   
-    color: black;
-}
 
 #subpage3{
  top: 0%;
  }
 
-#subpage4{
-
-    left: 200%;
- 
- }
 
 .sub{
 
@@ -343,7 +341,7 @@ color: ghostwhite;
 border: none;
 font-weight: bold;
 font-size: 16px;
-margin: 24px 9px;
+margin: 24px 9px 24px 0px;
 box-shadow: 0px 2px 0px #fefefe inset;
 transition: background-color 300ms linear all, transform 1s linear all;
 animation: fadeInUp 1000ms 1s ease-in 1 backwards;
@@ -365,6 +363,7 @@ animation: fadeInUp 1000ms 1s ease-in 1 backwards;
   .subpage2 section { 
      width: 52vw;
      left: 40%;
+    margin-top: 7%;
   }
 
 .subpage2 #Account{
@@ -376,14 +375,16 @@ animation: fadeInUp 1000ms 1s ease-in 1 backwards;
     font-weight: 700;
   }
 
+.field1 #headbutt button:hover{
 
+   background-color: coral;
 
-section button:hover{
-background-color: #ff6500;
  }
 
-.subpage2 section button:hover{
-box-shadow: 0 -2px 10px #e2ec7f inset;
+
+button:hover{
+
+   box-shadow: 0px -2px 15px #454733 inset;
 
  }
 
@@ -409,9 +410,9 @@ box-shadow: 0 -2px 10px #e2ec7f inset;
 
 
 .subpage2 .forgot1 {
-    margin-top: 3%;
+    margin-top: -13%;
     position: relative;
-    left: 20%;
+    left: 25%;
     top: -49%;
     padding: 1em;
 }
@@ -427,6 +428,7 @@ box-shadow: 0 -2px 10px #e2ec7f inset;
     width: 21vw;
     height: 3vw;
     margin-top: -4em;
+    margin-left: -.5em;
     border: 2px solid #84f184;
     background: #48d548;
     color: #ffffff;
@@ -537,7 +539,7 @@ font-weight: 700;
 	}
 }
 
-@media(min-width:300px) and (max-width:780px){
+@media(min-width:300px) and (max-width:767px){
 
 fieldset{
 
@@ -569,7 +571,7 @@ fieldset{
 }
 
  .subpage2 {
-    width: 145%;
+     width: 145vh;
     padding-right: 20%;
 }
 
@@ -582,7 +584,7 @@ label input{
 
 legend{
   
-    padding: 3.2em 1em;
+      padding: 2.2em 1em;
 	
   }
 
@@ -601,7 +603,7 @@ font-size: 2.2em;
 
 fieldset img{
 
-top: -16%;
+top: -10%;
 
 }
 
@@ -635,12 +637,12 @@ top: 18%;
 
 }
 
-@media (min-width: 300px) and (max-width: 780px){
+@media (min-width: 320px) and (max-width: 767px){
 
 .field1{
     width: 108vw;
     height: 60vh;
-    top: -2%;
+    top: -5%;
     left: -28%;
   
   }
@@ -663,14 +665,16 @@ top: 18%;
   }
 
 .subpage2 {
+width: 145vh;
 padding-left: 14em;
-  }
+row-gap: 3.3em;
+}
 
 .inputfont{ 
  
-width: 36%;
-transform: translate(1.8vh, -2.2vh);
-}
+width: 45%;
+height: 4vh;
+transform: translate(1.8vh, -2.8vh);}
 
  #subpage3 label input {
     width: 100%;
@@ -680,19 +684,22 @@ label {
     width: 80vw;
     position: relative;
     left: -52%;
+    margin-top: -8%;
   }
 
 .subpage2 section {
     position: relative;
     width: 100vh;
-    left: -11%;
-    top: 4%;
+   left: -34%;
+    top: 35%;
     transform: scale(1.1);
 }
 
 .subpage2 section button {
     min-width: 28.8vw;
-    left: -13%;
+    left: -5%;
+    margin-top:-10%;
+    font-size: 14px;
 }
 
 .field2 #one {
@@ -705,10 +712,12 @@ label {
 
 .subpage2 #Account {
     position: absolute;
-    top: 51%;
-    left: 46%;
+    margin-top: 0;
+    left: 52%;
     font-size: smaller;
 }
+
+
 #subpage3 { 
     width: 83%;
 }
@@ -723,15 +732,21 @@ label {
 .subpage2 .forgot {
     padding: 1em;
     position: relative;
-    left: -45%;
-    top: -144%;
+    left: -40%;
+    margin-top: -9%;
+}
+
+.subpage2 .forgot1 {
+    left: -40%;
+    margin-top: -20%;
 }
 
 #buttLogo {
     width: 32vw;
-    height: 6vh;
+    height: 7vh;
+    margin-top: -25%;
     position: relative;
-    left: -35%;
+    left: -30%;
 
 }
 
@@ -743,9 +758,10 @@ label {
 
 #result {
     width: 98vw;
-    padding: 0px 5em;
+    padding: 9px 5em;
     text-align: center;
     font: icon;
+    margin-left: -21%;
     font-size: small;
 }
 
@@ -763,7 +779,7 @@ label {
 }
 
 
-@media(min-width:780px) and (max-width:1300px){
+@media(min-width:768px) and (max-width:1023px){
 
 h1{
 
@@ -784,46 +800,80 @@ legend{
    padding: 2em 1em;
   }
 
-.field1,.subpage2{
+.field1{
    min-width: 84.8vh;
+   left: -6%;
+   top: -6%;
+}
+
+.sub {
+    min-width: 63.5vw;
+    height: 86vh;
+    left: 0%;
+    padding-top: 2em;
+}
+
+.subpage2 {
+      height: 94vh;
+    min-width: 69.5vw;
+    left: 0%;
+    row-gap: 3.1em;
 }
 
 .pg2{
 
- min-width: 84.8vh;
+    width: 125vw;
 
 }
 
 .field2{
-  min-width: 84.8vh;
-  margin-left: 16%;
+   
+    min-width: 95vh;
+    margin-left: 16%;
+
 }
 
-.admin1{
-  width:124.8vh;
+.admin1 {
+    width: 138vh;
+}
+
+.subpage2 section {
+    
+       top: 70%;
 }
 
 .subpage2 section button {
-    min-width: 20.8vh;
-    left: -17vh;
-    top: 25%;
+    min-width: 23.8vh;
+    left: -21vh;
+    margin-top: -2%;
 }
 
 .subpage2 #Account {
     position: absolute;
-    top: 100%;
-    left: 40%;
+    margin-top: 6%;
+    left: 30%;
     font-size: 1em;
 }
 
 .subpage2 .forgot {
     
-    left: -5%;
+     left: 4%;
 }
 
-label {
+.subpage2 .forgot1 {
+    left: -18%;
+    margin-top: -20%;
+}
+
+label { 
+    width: 39vw;
+   position: relative;
+   left: -47%;
+}
+
+.field2 label {
     position: relative;
-    left: -30%;
+    left: -38%;
 }
 
 .field2 #mainlogo { 
@@ -832,14 +882,14 @@ label {
 }
 
 .field2 #one { 
-   font-size: 4em;
-  transform: scale(0.4) translate(-20vh,-19vh);
+    margin-left: 30%;
+    transform: scale(0.5) translate(3vh,-46vh);
 }
 
-#subpage3 #buttlogo { 
-    width: 30vh;
+#subpage3 #buttlogo {
+    width: 45vh;
     height: 6vh;
-    margin-left: -18%;
+    margin-left: -31%;
   
 }
 
@@ -851,19 +901,20 @@ margin-left: -6%;
 
 }
 
-@media(min-width:480px) and (max-width:780px){
+@media(min-width:480px) and (max-width:767px){
 
 label {
   
     width: 50vw;
     position: relative;
     left: -30%;
+    margin-top: -9%;
 }
 
 
 .field1{
    width: 82vh;
-   left: -20%;
+    left: -24%;
   }
 
 .subpage2{
@@ -875,20 +926,22 @@ label {
 
 .field2{
     width: 89vw;
-    margin-left: 10%;
+    margin-left: 7%;
     padding-left: 7em;
 }
 
 
 .pg2,.admin1 {
-       width: 123vw;
+       width: 125vw;
 }
 
 #buttLogo {
-    width: 32vw;
-    height: 6vh;
+   
+    width: 41vw;
+    height: 7vh;
     position: relative;
-    left: -13%;
+    left: -35%;
+
 }
 
 #subpage3 {
@@ -917,19 +970,26 @@ label {
 }
 
 .loglabel {
-    width: 50vw;
-    left: -36%;
+    width: 55vw;
+    left: -46%;
+    margin-top: 0%;
+
 }
 
 .subpage2 .forgot {
-    
-    left: -5%;
+   left: -10%;
+   font-size: 14px;
+   margin-top: -2%;
 }
- 
+
+.subpage2 .forgot1 {
+   margin-top: -12%;
+   left: -26%;
+}
+
 .subpage2 section {
-   
-    left: -7%;
-  
+    left: -11%;
+    margin-top: -9%;
   }
 
 #headbutt button {
@@ -957,12 +1017,90 @@ width: 37%;
 padding: 10px 15px;
 transform: translate(1.8vh, -2.5vh);
 }
+}
 
 
 
+@media(width: 1024px) {
+
+#subpage3{
+
+width: auto;
+padding: 3em 9em 7em 19em;
+}
+
+.field2 {
+    min-width: 116.8vh;
+    margin-left: 18vw;
+}
+
+legend{
+      padding: 2.2em 1em;
+}
+
+  label {
+    width: auto;
+}
+
+.field2 h1 {
+    transform: scale(.5) translate(-7vh,-17vh);
+    letter-spacing: 14px;
+}
+
+.pg2 {
+    min-width: 114.8vh;
+}
+
+.admin1 {
+    width: 173.8vh;
+}
+.subpage2 {
+    min-width: 114.8vh;
+    row-gap: 3.5em;
+}
+#subpage3 #buttlogo {
+    height: 6vh;
+    width: 42vh;
+    margin-left: -24%;
+}
+.field1 label {
+    width: auto;
+    position: relative;
+    left: -44%
+}
+.field2 label {
+    position: relative;
+    left: -37%;
+}
+.subpage2 section {
+    top: 65%;
+    left: 26%;
+}
+.subpage2 #Account {
+    left: 46%;
+}
+.subpage2 section button {
+    width: 14vw;
+    height: 6vh;
+}
+.subpage2 .forgot {
+    left: 10%;
+}
+.subpage2 .forgot1 {
+    margin-top: -21%;
+    left: -10%;
 
 }
 
+}
+
+@media (min-width: 320px) and (max-width: 321px){
+
+#Account{
+    left: -48%;
+  
+  }
+}
 
 
 </style>
@@ -1075,13 +1213,16 @@ transform: translate(1.8vh, -2.5vh);
                   <div class="subpage2" id="subpage3"> 
 
                    <label class="loglabel" for="user">   
-                   <input type='text' id="IdE" name='Email Id' onblur='BlurEle(this);' onchange="Removelabel(this);"  required>
+                   <input type='text' 
+                   title='Enter your Email' id="IdE"
+                    name='Email Id'
+                    onblur='BlurEle(this);' onchange="Removelabel(this);"  required>
                    <span><img class='spanImg' src="image/Mail.svg">Email</span>
                    </label>
                 
                 <label class="loglabel" for="Password">
-                <input type="password" id="pass2" name='password' 
-                onblur='BlurEle(this);'  onchange="Removelabel(this);"  required placeholder="">
+                <input type="password" title='Enter your Password' id="pass2" name='password' 
+                onblur='BlurEle(this);' onchange="Removelabel(this);"  required placeholder="">
 
                 <span><img class='spanImg' src="image/Password.svg" style=" ">Password</span> 
                 </label> 
@@ -1091,7 +1232,7 @@ transform: translate(1.8vh, -2.5vh);
                
                <span id='result'></span>
 
-               <span class='forgot forgot1' style='margin-top: -3%'>New User? <a id='linkSign' onclick='signup();' href=''>Sign up</a></span>
+               <span class='forgot forgot1'>New User? <a id='linkSign' href=''>Sign up</a></span>
 
            </div>  
 
@@ -1105,17 +1246,6 @@ transform: translate(1.8vh, -2.5vh);
  </body>
 
  <script type="text/javascript">
-
-  function mySubmit(e) { 
-  e.preventDefault(); 
-  try {
-   someBug();
-  } catch (e) {
-   throw new Error(e.message);
-  }
-  return false;
-}
-
    
   let field1 = document.querySelector('.field1');
   let field2 = document.querySelector('.field2');
@@ -1194,14 +1324,15 @@ function verifyUser() {
       let uid = 'gripEg09';
       let upass = '289403';
       
-      let Idval = document.getElementById('Id').value;
-      let Passval = document.getElementById('pass').value;
+      let Idval = document.getElementById('IdE').value;
+      let Passval = document.getElementById('pass2').value;
 
       res.innerHTML = '';
 
        if (uid == Idval && upass == Passval) {
 
        res.innerHTML = '<p id="output" style="background-color:green;"> <img src="C:/Users/hp/Documents/myweb/TT/loader.svg"> Redirecting to Page </p>'
+       pg.setAttribute('action','Admin.html');
       
      } else if (uid != Idval){
 
@@ -1253,7 +1384,7 @@ var boxframes = [
 ]
 var boxframes3 = [
     {
-        height: '100vh',
+        height: '110vh',
         transform: 'scale(0.9)'
     
     }
@@ -1269,19 +1400,19 @@ function animatebox(){
   pg.animate(boxframes1, {
       duration: 300,
       fill: 'forwards',
-      easing: 'ease-out'
+      easing: 'ease-in'
   })
 
   sub.animate(boxframes, {
       duration: 400,
       fill: 'forwards',
-      easing: 'ease-out'
+      easing: 'ease-in'
   })
 
   field1.animate(boxframes3, {
       duration: 500,
       fill: 'forwards',
-      easing: 'ease-out'
+      easing: 'ease-in'
   })
 
 
@@ -1291,8 +1422,8 @@ animatebox();
 
   buttons.style.display='none';
   logo.style.display='none'; 
-  legend.style.top='-8%';
-  legend.style.transition='top 300ms ease-in-out';
+  legend.style.top='-3%';
+  legend.style.transition='top 300ms ease-out';
   document.querySelector('.field1 legend').innerHTML ='<h1 style="opacity:1; height:20vw;">Registration Form</h1>';
 }
 
@@ -1334,6 +1465,7 @@ elem.addEventListener('click',function(e){
  });
 
 }
+
 
 
 
