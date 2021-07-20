@@ -1,0 +1,232 @@
+<html>
+
+    <head>
+    
+        <title>ADMIN - FOR YOU</title>
+
+    <style type="text/css">
+
+body{
+
+   width: 100%;
+   height: 100%;
+  overflow-x: hidden;
+   color: white;
+  background: rgba(0, 0, 0, .3);
+  margin: 2% auto;
+}
+
+
+header{
+    display: flex;
+    width: 90%;
+    height: 35%;
+    background: rgba(0, 0, 0, .5);
+    margin: 0 auto;
+    text-align: center;
+   border-radius: 10px;
+}
+
+
+header div{
+    width: 40rem;
+    height: 90%;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, .5);
+    margin: 1% auto;
+    border-radius: 10px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 63%;
+    background: rgba(0, 0, 0, .5);
+    margin: 2% auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+
+main div{
+    width: 27rem;
+    height: 46%;
+    background: rgba(0, 0, 0, .5);
+    margin: 0.5% auto;
+    border-radius: 10px;
+}
+
+article{
+    width: 40rem;
+    background: rgba(0, 0, 0, .1);
+}
+
+article p{
+  padding: .2em;
+}
+
+h1 {
+    width: 85%;
+    font-size: 3em;
+    margin: 7% auto;
+}
+
+@media screen and (max-width:780px){
+
+header, main{
+    width: 94%;
+    height: 65%;
+    margin: 0 auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 10px;
+  }
+
+main {
+    height: 180%;
+}
+
+header div:nth-of-type(1){
+
+    height: 50%;
+}
+
+h1 {
+    width: 75%;
+    font-size: 2.3em;
+    padding: 1em;
+    margin: 0% auto;
+}
+
+header div{
+    width: 100%;
+}
+
+header div:nth-of-type(2){
+   padding: 1em 0;
+}
+
+main div{
+
+   width: 100%;
+   height: 73%;
+   padding: 1rem 0;
+}
+
+main div p{
+  margin: 1.5em;
+}
+
+main div img{
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+}
+
+article{
+    width: 100%;
+}
+
+}
+ 
+ </style>
+
+</head>
+
+  <body>
+    
+    <header>
+
+       <div>
+      
+        <h1>10,000+ of our users love our products</h1>
+      
+      </div>
+
+       <div>
+        
+         <article>
+          <span>⭐ ⭐ ⭐ ⭐ ⭐</span>
+           <p> I am loving this combo...its delicious</p>
+         </article>
+        
+          <article>
+          <span>⭐ ⭐ ⭐ ⭐ ⭐</span>
+            <p> I am loving this combo...its delicious</p>
+         </article>
+        
+         <article>
+          <span>⭐ ⭐ ⭐ ⭐ ⭐</span>
+          <p> I am loving this combo...its delicious</p>
+        </article>
+
+       </div>  
+
+    </header>
+
+     <main>
+        
+        <div>
+           <img> <span>Ritik rai</span>
+           <p>It gives me an opportunity to configure my life into a greater exposure to life..It gives me an opportunity to configure my life into a greater exposure to life..
+           It gives me an opportunity to configure my life into a greater exposure to life...</p>
+           <button onclick='load()'>load</button>
+        </div>
+      
+         <div>
+           <img> <span>Ritik rai</span>
+           <p>It gives me an opportunity to configure my life into a greater exposure to life..It gives me an opportunity to configure my life into a greater exposure to life..
+           It gives me an opportunity to configure my life into a greater exposure to life...</p>
+        </div>
+      
+          <div>
+           <img> <span>Ritik rai</span>
+           <p>It gives me an opportunity to configure my life into a greater exposure to life..It gives me an opportunity to configure my life into a greater exposure to life..
+           It gives me an opportunity to configure my life into a greater exposure to life...</p>
+        </div>
+       
+         <div>
+           <img> <span>Ritik rai</span>
+           <p>It gives me an opportunity to configure my life into a greater exposure to life..It gives me an opportunity to configure my life into a greater exposure to life..
+           It gives me an opportunity to configure my life into a greater exposure to life...</p>
+        </div> 
+        
+           <div>
+           <img> <span>Ritik rai</span>
+           <p>It gives me an opportunity to configure my life into a greater exposure to life..It gives me an opportunity to configure my life into a greater exposure to life..
+           It gives me an opportunity to configure my life into a greater exposure to life...</p>
+        </div>
+        
+         <div>
+           <img> <span>Ritik rai</span>
+           <p>It gives me an opportunity to configure my life into a greater exposure to life..It gives me an opportunity to configure my life into a greater exposure to life..
+           It gives me an opportunity to configure my life into a greater exposure to life...</p>
+        </div> 
+
+     </main>
+
+   </body>
+
+
+    <script type="text/javascript">
+
+function load(){
+    
+    const xhttp = new XMLHttpRequest();
+   
+    xhttp.onload= function(){
+
+    document.querySelector('main div').innerHTML = this.responseText;
+
+}
+
+xhttp.open('GET','ajax.txt',true);
+xhttp.send();
+
+}
+  
+  </script>
+
+</html>
