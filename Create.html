@@ -42,11 +42,38 @@ header{
 
 header div{
     width: 40rem;
-    height: 90%;
-    justify-content: space-between;
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
     background: rgba(0, 0, 0, .5);
     margin: 1% auto;
     border-radius: 10px;
+    flex-direction: column;
+}
+
+
+header div input, header div select{
+    width: 13rem;
+    height: 4vh;
+    margin: 1% auto;
+    border-radius: 2px;
+    text-align: center;
+}
+
+header div select option{
+    text-align: center;
+}
+
+header div button{
+    width: 40%;
+    height: 4vh;
+    margin: 1% auto;
+    border-radius: 2px;
+    text-align: center;
+    background: #3ab1b7;
+    border: none;
+    font-weight: 700;
+    color: white;
 }
 
 main{
@@ -81,9 +108,11 @@ article p{
 }
 
 h1 {
-    width: 85%;
-    font-size: 3em;
-    margin: 7% auto;
+    width: 100%;
+    letter-spacing: .2em;
+    font-size: 2.5em;
+    font-family: sans-serif;
+    margin: 1% auto;
 }
 
 .contain2{
@@ -264,9 +293,20 @@ header div h1 {
     <header>
 
        <div>
-      
-        <h1>10,000+ of our users love our products</h1>
-     
+         
+         <h1>Weather Forecast</h1>
+
+        <input type='text' placeholder="Search Your City">
+        
+        <Select placeholder="Search By">
+         
+         <option> City</option>
+         <option>location</option>
+         
+         </select>
+
+       <button>Search</button>
+
       </div>
 
        <div>
@@ -417,27 +457,11 @@ function load(){
 
 }
 
-xhttp.open('GET','ajax.txt',true);
+xhttp.open('GET','manifest.json',true);
 xhttp.send();
 
 }
 
-const data = london;
-
-const xhr = new XMLHttpRequest();
-xhr.withCredentials = true;
-
-xhr.addEventListener("readystatechange", function () {
-  if (this.readyState === this.DONE) {
-    console.log(this.responseText);
-  }
-});
-
-xhr.open("GET", "https://weatherapi-com.p.rapidapi.com/timezone.json?q=%3CREQUIRED%3E");
-xhr.setRequestHeader("x-rapidapi-key", "d75393a8b6msh332c2cb2fad5a36p176077jsne75724253906");
-xhr.setRequestHeader("x-rapidapi-host", "weatherapi-com.p.rapidapi.com");
-
-xhr.send(data);
   
   </script>
 
