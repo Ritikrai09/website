@@ -24,7 +24,7 @@ body{
    height: 100%;
   overflow-x: hidden;
    color: white;
-  background: rgba(0, 0, 0, .3);
+  background: #25222c;
   margin: 2% auto;
 }
 
@@ -53,9 +53,10 @@ main{
     display: flex;
     flex-wrap: wrap;
     width: 90%;
-    height: 63%;
+    height: 100%;
     background: rgba(0, 0, 0, .5);
     margin: 2% auto;
+    padding: 1em;
     text-align: center;
     border-radius: 10px;
 }
@@ -64,7 +65,7 @@ main{
 
 main div{
     width: 27rem;
-    height: 46%;
+    height: 24vh;
     background: rgba(0, 0, 0, .5);
     margin: 0.5% auto;
     border-radius: 10px;
@@ -83,6 +84,84 @@ h1 {
     width: 85%;
     font-size: 3em;
     margin: 7% auto;
+}
+
+.contain2{
+    width:85rem;
+    background: transparent;
+}
+
+
+.contain2 div{
+    width:100%;
+    height: auto;
+    margin: 3.5% auto;
+    font: menu;
+    padding: 1em;
+}
+
+.contain2::before{
+   content:'Categories';
+    width:100%;
+    top: 0;
+    left: 0;
+    font-family: sans-serif;
+    font-weight: 700;
+    z-index: 1;
+    font-size: 1.3rem;
+    padding: 2em;
+    letter-spacing: .3em;
+}
+.contain2 div span{
+    width: 100%;
+    position: relative;
+    top: 0%;
+    left: 1%;
+    z-index: 1;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: .4em;
+    padding: 1em 2em;
+}
+
+.contain2 div ul span{
+    width: 10%;
+    position: relative;
+    top: 0%;
+    left: -1%;
+    z-index: 1;
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: .1em;
+    padding: 1em 2em;
+}
+
+ul{
+    list-style-type: none;
+     width: 80rem;
+    display: inline-flex;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: center;
+
+  }
+
+ul li{
+    width: 15rem;
+    height: 3vh;
+    font-size: large;
+    align-self: center;
+    padding: 1em 0.4em;
+    background: grey;
+}
+
+
+.contain2 div:nth-child(2) ul li{
+    width: 9rem;
+}
+
+.contain2 div:nth-child(3) ul li{
+    width: 7rem;
 }
 
 @media screen and (max-width:780px){
@@ -147,6 +226,34 @@ article{
 }
 
 }
+
+@media(min-width:784px) and (max-width:1224px){
+
+header div{
+    width: 32rem;
+   margin: 1% 3%;
+}
+
+article {
+    
+    width: auto;
+}
+
+main div {
+    width: 39vw;
+    padding: 1em;
+}
+
+header div h1 {
+
+    width: 100%;
+    font-size: 2.7em;
+    height: 100%;
+    margin: 12.5% auto;
+
+}
+}
+
  
  </style>
 
@@ -186,44 +293,115 @@ article{
      <main>
         
         <div>
-           <img alt='not found'> <span>Ritik rai</span>
+           <img alt=''> <span>Ritik rai</span>
            <p>It gives me an opportunity to configure my life into a greater exposure to life..It gives me an opportunity to configure my life into a greater exposure to life..
            It gives me an opportunity to configure my life into a greater exposure to life...</p>
            <button onclick='load()'>load</button>
         </div>
       
          <div>
-           <img alt='not found'><span>Ritik rai</span>
+           <img alt=''><span>Ritik rai</span>
            <p>It gives me an opportunity to configure my life into a greater exposure to life..It gives me an opportunity to configure my life into a greater exposure to life..
            It gives me an opportunity to configure my life into a greater exposure to life...</p>
         </div>
       
           <div>
-           <img alt='not found'> <span>Ritik rai</span>
+           <img alt=''> <span>Ritik rai</span>
            <p>It gives me an opportunity to configure my life into a greater exposure to life..It gives me an opportunity to configure my life into a greater exposure to life..
            It gives me an opportunity to configure my life into a greater exposure to life...</p>
         </div>
        
          <div>
-           <img alt='not found'> <span>Ritik rai</span>
+           <img alt=''> <span>Ritik rai</span>
            <p>It gives me an opportunity to configure my life into a greater exposure to life..It gives me an opportunity to configure my life into a greater exposure to life..
            It gives me an opportunity to configure my life into a greater exposure to life...</p>
         </div> 
         
            <div>
-           <img alt='not found'> <span>Ritik rai</span>
+           <img alt=''> <span>Ritik rai</span>
            <p>It gives me an opportunity to configure my life into a greater exposure to life..It gives me an opportunity to configure my life into a greater exposure to life..
            It gives me an opportunity to configure my life into a greater exposure to life...</p>
         </div>
         
          <div>
-           <img alt='not found'> <span>Ritik rai</span>
+           <img alt=''> <span>Ritik rai</span>
            <p>It gives me an opportunity to configure my life into a greater exposure to life..It gives me an opportunity to configure my life into a greater exposure to life..
            It gives me an opportunity to configure my life into a greater exposure to life...</p>
         </div> 
 
      </main>
+        
+        <main class='contain2'>
+ 
+         <div>
+         
+          <span>Front End</span>
+          
+          <ul>
+               <span>Basics</span>
+               <li>HTML</li>
+               <li>CSS</li>
+               <li>Javascript</li>
+          </ul>
+          
+          <ul>
+               <span>Frameworks</span>
+               <li>React</li>
+               <li>Vue</li>
+               <li>Angular</li>
+               <li>Webpack</li>
+          </ul>
 
+          <ul>
+               <span>Styles</span>
+               <li>Bootstrap</li>
+               <li>Mobile UI</li>
+               
+          </ul> 
+
+         </div> 
+         
+          <div>
+
+            <span>Back End</span>
+            
+            <ul>
+               <span>Technology</span>
+               <li>PHP</li>
+               <li>Node</li>
+               <li>Ruby</li>
+               <li>Java(spring)</li>
+               <li>ASP.NET</li>
+               <li>Redis</li>
+               
+            </ul>     
+          
+          </div> 
+          
+           <div> 
+
+            <span>Databases</span>
+             
+            <ul>
+               <span>RDBMS</span>
+               <li>MySql</li>
+               <span>No Sql</span>
+               <li>Mongo</li>
+               <span>Graph</span>
+               <li>Neo4js</li>
+               <li>ArangoDB</li>
+               <span>Message Queues</span>
+               <li>SQS</li>
+               
+            </ul>      
+
+            </div> 
+            <div><span>Devops</span> </div> 
+              <div><span>Mobile App Dev</span> </div> 
+
+
+       </main>
+  
    </body>
 
 
@@ -243,6 +421,23 @@ xhttp.open('GET','ajax.txt',true);
 xhttp.send();
 
 }
+
+const data = null;
+
+const xhr = new XMLHttpRequest();
+xhr.withCredentials = true;
+
+xhr.addEventListener("readystatechange", function () {
+  if (this.readyState === this.DONE) {
+    console.log(this.responseText);
+  }
+});
+
+xhr.open("GET", "https://andruxnet-world-cities-v1.p.rapidapi.com/?query=paris&searchby=city");
+xhr.setRequestHeader("x-rapidapi-key", "d75393a8b6msh332c2cb2fad5a36p176077jsne75724253906");
+xhr.setRequestHeader("x-rapidapi-host", "andruxnet-world-cities-v1.p.rapidapi.com");
+
+xhr.send(data);
   
   </script>
 
