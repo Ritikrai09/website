@@ -463,12 +463,12 @@ xhttp.send();
 }
 
 // 'JSON' data included as above
-data = ' "icons": [{"src": "/images/icons-192.png","type": "image/png","sizes": "192x192"}]';
+data = '[{"Spider-man" : "is ok", "Need-For-Speed" : "Is My Favourate Game"}]';
 
 // Function to 'load JSON' data
 function loadin() {
-  var someData_notJSON = JSON.parse(data);
-  console.log(someData_notJSON[0].type); // Will log "Is My Favourate Game"
+  var someData = JSON.parse(data);
+  console.log(someData[0].Need-For-Speed); // Will log "Is My Favourate Game"
 }
 
 loadin();
