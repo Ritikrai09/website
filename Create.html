@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
     <head>
@@ -12,7 +13,7 @@
 
       <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
       <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="black">
-        <link rel="manifest" href="manifest.json">
+        <script type="text/javascript" src="manifest.json"></script>
         
         <title>ADMIN - FOR YOU</title>
 
@@ -45,7 +46,6 @@ header div{
     height: 30vh;
     display: flex;
     justify-content: space-evenly;
-    background: rgba(0, 0, 0, .5);
     margin: 1% auto;
     border-radius: 10px;
     flex-direction: column;
@@ -58,6 +58,7 @@ header div input, header div select{
     margin: 1% auto;
     border-radius: 2px;
     text-align: center;
+    border: none;
 }
 
 header div select option{
@@ -72,7 +73,7 @@ header div button{
     text-align: center;
     background: #3ab1b7;
     border: none;
-    font-weight: 700;
+    font-weight: 400;
     color: white;
 }
 
@@ -100,7 +101,6 @@ main div{
 
 article{
     width: 40rem;
-    background: rgba(0, 0, 0, .1);
 }
 
 article p{
@@ -305,7 +305,7 @@ header div h1 {
          
          </select>
 
-       <button>Search</button>
+       <button onclick='init();'>Search</button>
 
       </div>
 
@@ -461,6 +461,28 @@ xhttp.open('GET','ajax.txt',true);
 xhttp.send();
 
 }
+
+function loadJSON(callback) {   
+
+    var xobj = new XMLHttpRequest();
+        xobj.overrideMimeType("application/json");
+    xobj.open('GET', 'manifest.json', true); // Replace 'my_data' with the path to your file
+    xobj.onreadystatechange = function () {
+          if (xobj.readyState == 4 && xobj.status == "200") {
+            // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+            callback(xobj.responseText);
+          }
+    };
+    xobj.send(null);  
+ }
+
+function init() {
+ loadJSON(function(response) {
+  // Parse JSON string into object
+    var actual_JSON = JSON.parse(response);
+ });
+}
+
 
   
   </script>
