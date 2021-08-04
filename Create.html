@@ -463,12 +463,12 @@ xhttp.send();
 }
 
 // 'JSON' data included as above
-data = '[{"Spider-man" : "is ok", "Need-For-Speed" : "Is My Favourate Game"}]';
+data = '[{"Spiderman" : "is ok", "Need-For-Speed" : "Is My Favourate Game"}]';
 
 // Function to 'load JSON' data
 function loadin() {
   var someData = JSON.parse(data);
-  console.log(someData[0].Need-For-Speed); // Will log "Is My Favourate Game"
+  console.log(someData[0].Spiderman); // Will log "Is My Favourate Game"
 }
 
 loadin();
