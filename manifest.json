@@ -1,6 +1,7 @@
 {
-  "short_name": "Weather",
   "name": "Weather: Do I need an umbrella?",
+  "short_name": "Weather",
+  "description": "View weather information for today",
   "icons": [
     {
       "src": "/images/icons-192.png",
