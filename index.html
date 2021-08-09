@@ -50,7 +50,7 @@ margin-top: -1%;
     left: 1%;
    top: -5%;
    overflow: hidden;
-   animation: pop 1000ms ease-out 1;
+   animation: pop 1s ease-out 1;
    font-family: sans-serif;
 }
 
@@ -74,7 +74,8 @@ fieldset img{
     left: 0%;
     top: -9%; 
     opacity: 0;
-    animation: fadeIn 1s .5s ease-out 1 forwards;
+    animation: fadeIn 1s ease-out 1;
+    animation-delay: 0.5s;
  }
 
 h3{
@@ -84,21 +85,21 @@ letter-spacing: .2rem;
 color: ghostwhite;
 position: relative;
 top: 3%;
-animation: fadeIn 1000ms 0.6s ease-out 1 forwards;
+animation: fadeIn 1000ms 0.6s ease-out 1;
 opacity: 0;
 text-shadow: 2px 2px 10px black;
 }
 
  #one{
- animation: SlideIn1 1000ms 0.6s  ease-out 1 forwards;
+ animation: SlideIn1 1000ms 0.6s  ease-out 1;
  }
 
  #two{
-  animation: fadeIn 1000ms 0.6s ease-out 1 forwards;
+  animation: fadeIn 1000ms 0.6s ease-out 1;
  }
 
  #three{
-  animation: SlideIn2  1000ms 0.6s  ease-out 1 forwards;  
+  animation: SlideIn2  1000ms 0.6s  ease-out 1;  
  }
 
 h1{
@@ -356,7 +357,7 @@ font-size: 16px;
 margin: 24px 9px 24px 0px;
 box-shadow: 0px -2px 2px #191a18d4  inset;
 transition: background-color 300ms linear all, transform 1s linear all;
-animation: fadeInUp 1000ms 1s ease-in 1 backwards;
+animation: fadeInUp 1s 0.5s ease-in 1 backwards;
 }
 
 .subpage2 section button{
@@ -484,8 +485,6 @@ font-weight: 700;
 100%{
 
     opacity: 1;
-   animation-play-state: paused;
-
 }
 }
 
