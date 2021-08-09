@@ -1112,7 +1112,7 @@ transform: translate(1.8vh, -2.5vh);
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1440px){
+@media (min-width: 1024px) and (max-width: 1440px){
 
 .field1{
     height: 110vh;
