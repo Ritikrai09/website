@@ -1104,105 +1104,6 @@ transform: translate(1.8vh, -2.5vh);
 }
 }
 
-
-
-@media(width: 1024px) {
-
-#subpage3{
-
-width: auto;
-padding: 3em 9em 7em 19em;
-}
-
-.field1 {
-   
-    height: 110vh;
-
-}
-
-.field2 {
-    min-width: 116.8vh;
-    margin-left: 18vw;
-}
-
-h1{
-
-  font-size: 3.5em;
-  
-}
-
-.field1 #register {
-   font-size: 3em;
-    margin-top: -1%;
-}
-
-h3{
-
-font-size: 0.91em;
-
-}
-
-legend{
-      padding: 2.2em 1em;
-}
-
-  label {
-    width: auto;
-}
-
-.field2 h1 {
-    transform: scale(.5) translate(-7vh,-17vh);
-    letter-spacing: 14px;
-}
-
-.pg2 {
-    min-width: 114.8vh;
-}
-
-.admin1 {
-    width: 173.8vh;
-}
-.subpage2 {
-    min-width: 114.8vh;
-    row-gap: 3.5em;
-}
-.subpage2 section {
-    top: 65%;
-    left: 16%;
-}
-#subpage3 #buttlogo {
-    height: 6vh;
-    width: 42vh;
-    margin-left: -24%;
-}
-.field1 label {
-    width: auto;
-    position: relative;
-    left: -44%
-}
-.field2 label {
-    position: relative;
-    left: -37%;
-}
-
-.subpage2 #Account {
-    left: 60%;
-}
-.subpage2 section button {
-    width: 14vw;
-    height: 6vh;
-}
-.subpage2 .forgot {
-    left: 10%;
-}
-.subpage2 .forgot1 {
-    margin-top: -21%;
-    left: -10%;
-
-}
-
-}
-
 @media (min-width: 320px) and (max-width: 321px){
 
 #Account{
@@ -1242,7 +1143,7 @@ legend{
 
 .subpage2 #Account {
     margin-top: -2%;
-    margin-left: -77%;
+    margin-left: -65%;
 
 }
 
